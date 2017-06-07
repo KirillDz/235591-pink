@@ -15,26 +15,32 @@
             <li class="main-nav__item"><a href="#">HTML Academy</a></li>
           </ul>
         </nav>
-        <h2 class="page-header__slogan">Конкурс на самое безбашеное путешествие с Пинк</h2>
     </header>
     <main>
+      <section class="contest">
+        <h2 class="contest__slogan">Конкурс на самое безбашеное путешествие с Пинк</h2>
+      </section>
       <p class="prize">Поделись своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
       <section class="form-wrapper">
         <form class="form-travel" action="#" method="post">
-          <div class="form-travel__surname">
-            <label for="surname">Фамилия:</label>
-            <input type="text" name="surname" placeholder="Укажите фамилию*">
-          </div>
-          <div class="form-travel__name">
-            <label for="name">Фамилия:</label>
-            <input type="text" name="name" placeholder="Укажите ваше имя*">
-          </div>
-          <div class="form-travel__patronymic">
-            <label for="patronymic">Фамилия:</label>
-            <input type="text" name="patronymic" placeholder="Ну и отчество тоже*">
+          <div class="form-travel__users-info">
+            <ul class="form-travel__users-info-list">
+              <li class="form-travel__users-info-surname">
+                <label for="surname">Фамилия:</label>
+                <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+              </li>
+              <li class="form-travel__users-info-name">
+                <label for="name">Имя:</label>
+                <input type="text" name="name" id="name" placeholder="Укажите ваше имя*">
+              </li>
+              <li class="form-travel__users-info-patronymic">
+                <label for="patronymic">Отчество:</label>
+                <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже*">
+              </li>
+            </ul>
           </div>
           <div class="form-travel__achievements">
-            <p class-"form-travel__achievements-slogan">Ваши безбашенные достижения в путешествии</p>
+            <p class="form-travel__achievements-slogan">Ваши безбашенные достижения в путешествии</p>
             <ul class="form-travel__achievements-list">
               <li class="form-travel__achievements-item">
                 <input type="checkbox" name="shark">
@@ -62,12 +68,12 @@
               </li>
             </ul>
           </div>
-          <div class="form-travel__contackt-info">
-            <div class="form-travel__contackt-info-number">
+          <div class="form-travel__contact-info">
+            <div class="form-travel__contact-info-number">
               <label for="number">Номер телефона</label>
               <input type="text" name="number" placeholder="Номер, пожалуйста*">
             </div>
-            <div class="form-travel__contackt-info-email">
+            <div class="form-travel__contact-info-email">
               <label for="email">Адрес почты</label>
               <input type="text" name="email" placeholder="Введите почту*">
             </div>
@@ -75,17 +81,28 @@
           <div class="form-travel__attachment">
             <p class="form-travel__attachment-slogan">С каким приложением путешествовали?</p>
             <ul class="form-travel__attachment-list">
-              <li class="form-travel__attachment-item">Pink для iOS</li>
-              <li class="form-travel__attachment-item">Pink на Android</li>
-              <li class="form-travel__attachment-item">Windows Phone</li>
+              <li class="form-travel__attachment-item">
+                <input type="checkbox" id="ios" name="ios">
+                <label for="ios">Pink для iOS</label>
+              </li>
+              <li class="form-travel__attachment-item">
+                <input type="checkbox" name="android">
+                <label for="android">Pink на Android</label>
+              </li>
+              <li class="form-travel__attachment-item">
+                <input type="checkbox" id="wphone" name="wphone">
+                <label for="wphone">Windows Phone</label>
+              </li>
             </ul>
           </div>
           <div class="form-travel__emotion">
             <p class="form-travel__emotion-slogan">Опишите свои емоции</p>
             <textarea name="emotion" rows="8" cols="80">Можно прям в красках не стесняясь в выражениях</textarea>
           </div>
-          <button class="form-travel__button" type="submit" name="button">Отправить форму</button>
-          <p class="form-travel__explanation">* - обязательные поля</p>
+          <div class="form-travel__form-send">
+            <button class="form-travel__button" type="submit" name="button">Отправить форму</button>
+            <p class="form-travel__explanation">* - обязательные поля</p>
+          </div>
         </form>
       </section>
       <footer>

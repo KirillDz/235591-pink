@@ -7,44 +7,93 @@
   <body>
     <header class="page-header">
         <h1 class="page-header__title">PINK</h1>
-        <nav class="mian-nav">
+        <button class="page-header__button" type="button" name="button">menu</button>
+        <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
           </ul>
         </nav>
-        <section class="application">
-          <a href="#" class="application__download">Скачать приложение</a>
-          <p class="application__osplatform">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </section>
     </header>
       <main>
+        <section class="application">
+          <a href="#" class="application__download">Скачать приложение</a>
+          <a href="#" class="appliacation__download-ios"></a>
+          <a href="#" class="appliacation__download-android"></a>
+          <a href="#" class="appliacation__download-wphone"></a>
+          <p class="application__osplatform">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </section>
         <article class="benefits">
-          <p class="benefits__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+          <p class="benefits__slogan">Устали от серости мегаполиса?</p>
+          <p class="benefits__slogan">Нам есть, что вам предложить!</p>
           <ul class="benefits__list">
             <li class="benefits__item">
               <h2 class="benefits__title">Поднимает настроение</h2>
-              <p class="benefits__description">Приложение позволит вам победить осенню хандру и депрессию буквально в несколько кликов!</p>
+              <p class="benefits__description">
+                Приложение позволит вам победить осенню хандру и депрессию буквально в несколько кликов!
+              </p>
             </li>
             <li class="benefits__item">
               <h2 class="benefits__title">Меняет мир вокруг</h2>
-              <p class="benefits__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, что бы усилить эффект</p>
+              <p class="benefits__description">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, что бы усилить эффект
+              </p>
             </li>
             <li class="benefits__item">
               <h2 class="benefits__title">Заводит новых друзей</h2>
-              <p class="benefits__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <p class="benefits__description">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
             </li>
           </ul>
         </article>
         <section class="reviews">
-          <span class="reviews__author">Николай Петров</span>
-          <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложеной фотографии!"</p>
-          <span class="reviews__slider-wrapper"><a href="#"></a><a href="#"></a><a href="#"></a></span>
+          <div class="reviews__wrapper">
+            <div class="reviews__item">
+              <p class="reviews__author">Николай Петров</p>
+              <p class="reviews__text">
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложеной фотографии!"
+              </p>
+              <span class="reviews__slider-wrapper"><a href="#"></a><a href="#"></a><a href="#"></a></span>
+            </div>
+            <div class="reviews__item">
+
+            </div>
+            <div class="reviews__item">
+
+            </div>
+          </div>
+          <div class="reviews__pagination">
+            <a class="reviews__pagination-item" href="#"></a>
+            <a class="reviews__pagination-item" href="#"></a>
+            <a class="reviews__pagination-item" href="#"></a>
+          </div>
         </section>
         <section class="price">
-          <!-- Таблица???-->
+          <div class="price__wrapper">
+            <div class="price__item">
+              <div class="price__item-row price__item-row--header">
+                <p class="price__item-tarif">Стандарт</p>
+                <p class="price__item-money">3.99 USD</p>
+              </div>
+              <div class="price__item-row">
+                <span class="price__item-features">Розовый фильтр</span>
+                <span class="price__item-features price__item-features--yes"></span>
+              </div>
+              <div class="price__item-row">
+                <span class="price__item-features">Смайлики</span>
+                <span class="price__item-features price__item-features--yes"></span>
+              </div>
+              <div class="price__item-row">
+                <span class="price__item-features">Комментарии</span>
+                <span class="price__item-features price__item-features--no"></span>
+              </div>
+          <div class="price__pagination"></div>
         </section>
         <section class="feedback">
           <h2 class="feedback__slogan">Остались вопросы?<br>Свяжитесь с нами!</h2>
